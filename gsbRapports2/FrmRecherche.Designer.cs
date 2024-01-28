@@ -33,9 +33,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lstDate = new System.Windows.Forms.DateTimePicker();
             this.lstVisiteurs = new System.Windows.Forms.ComboBox();
+            this.bdgVisiteur = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.btnRecherche = new System.Windows.Forms.Button();
             this.dgRapport = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motifDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bilanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idVisiteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idMedecinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rapportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,19 +58,9 @@
             this.textMedecin = new System.Windows.Forms.TextBox();
             this.btnEnregistrer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.motifDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bilanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idVisiteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idMedecinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rapportBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bdgVisiteur = new System.Windows.Forms.BindingSource(this.components);
-            this.rapportBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bdgVisiteur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgRapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rapportBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdgVisiteur)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rapportBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -100,6 +98,10 @@
             this.lstVisiteurs.Size = new System.Drawing.Size(121, 21);
             this.lstVisiteurs.TabIndex = 3;
             // 
+            // bdgVisiteur
+            // 
+            this.bdgVisiteur.DataSource = typeof(gsbRapports2.visiteur);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -135,7 +137,47 @@
             this.dgRapport.Name = "dgRapport";
             this.dgRapport.Size = new System.Drawing.Size(643, 150);
             this.dgRapport.TabIndex = 6;
-            this.dgRapport.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRapport_CellContentClick);
+            this.dgRapport.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRapport_CellClick);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            // 
+            // motifDataGridViewTextBoxColumn
+            // 
+            this.motifDataGridViewTextBoxColumn.DataPropertyName = "motif";
+            this.motifDataGridViewTextBoxColumn.HeaderText = "motif";
+            this.motifDataGridViewTextBoxColumn.Name = "motifDataGridViewTextBoxColumn";
+            // 
+            // bilanDataGridViewTextBoxColumn
+            // 
+            this.bilanDataGridViewTextBoxColumn.DataPropertyName = "bilan";
+            this.bilanDataGridViewTextBoxColumn.HeaderText = "bilan";
+            this.bilanDataGridViewTextBoxColumn.Name = "bilanDataGridViewTextBoxColumn";
+            // 
+            // idVisiteurDataGridViewTextBoxColumn
+            // 
+            this.idVisiteurDataGridViewTextBoxColumn.DataPropertyName = "idVisiteur";
+            this.idVisiteurDataGridViewTextBoxColumn.HeaderText = "idVisiteur";
+            this.idVisiteurDataGridViewTextBoxColumn.Name = "idVisiteurDataGridViewTextBoxColumn";
+            // 
+            // idMedecinDataGridViewTextBoxColumn
+            // 
+            this.idMedecinDataGridViewTextBoxColumn.DataPropertyName = "idMedecin";
+            this.idMedecinDataGridViewTextBoxColumn.HeaderText = "idMedecin";
+            this.idMedecinDataGridViewTextBoxColumn.Name = "idMedecinDataGridViewTextBoxColumn";
+            // 
+            // rapportBindingSource
+            // 
+            this.rapportBindingSource.DataSource = typeof(gsbRapports2.rapport);
             // 
             // label4
             // 
@@ -193,6 +235,7 @@
             // 
             // textID
             // 
+            this.textID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "id", true));
             this.textID.Location = new System.Drawing.Point(188, 290);
             this.textID.Name = "textID";
             this.textID.Size = new System.Drawing.Size(100, 20);
@@ -200,6 +243,7 @@
             // 
             // textDate
             // 
+            this.textDate.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "date", true));
             this.textDate.Location = new System.Drawing.Point(188, 336);
             this.textDate.Name = "textDate";
             this.textDate.Size = new System.Drawing.Size(100, 20);
@@ -207,6 +251,7 @@
             // 
             // textMotif
             // 
+            this.textMotif.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "motif", true));
             this.textMotif.Location = new System.Drawing.Point(188, 383);
             this.textMotif.Name = "textMotif";
             this.textMotif.Size = new System.Drawing.Size(100, 20);
@@ -214,6 +259,7 @@
             // 
             // textBilan
             // 
+            this.textBilan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "bilan", true));
             this.textBilan.Location = new System.Drawing.Point(433, 290);
             this.textBilan.Name = "textBilan";
             this.textBilan.Size = new System.Drawing.Size(100, 20);
@@ -221,6 +267,7 @@
             // 
             // textVisiteur
             // 
+            this.textVisiteur.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "idVisiteur", true));
             this.textVisiteur.Location = new System.Drawing.Point(433, 336);
             this.textVisiteur.Name = "textVisiteur";
             this.textVisiteur.Size = new System.Drawing.Size(100, 20);
@@ -228,6 +275,7 @@
             // 
             // textMedecin
             // 
+            this.textMedecin.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "idMedecin", true));
             this.textMedecin.Location = new System.Drawing.Point(433, 383);
             this.textMedecin.Name = "textMedecin";
             this.textMedecin.Size = new System.Drawing.Size(100, 20);
@@ -241,6 +289,7 @@
             this.btnEnregistrer.TabIndex = 19;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // btnSupprimer
             // 
@@ -250,54 +299,6 @@
             this.btnSupprimer.TabIndex = 20;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            // 
-            // motifDataGridViewTextBoxColumn
-            // 
-            this.motifDataGridViewTextBoxColumn.DataPropertyName = "motif";
-            this.motifDataGridViewTextBoxColumn.HeaderText = "motif";
-            this.motifDataGridViewTextBoxColumn.Name = "motifDataGridViewTextBoxColumn";
-            // 
-            // bilanDataGridViewTextBoxColumn
-            // 
-            this.bilanDataGridViewTextBoxColumn.DataPropertyName = "bilan";
-            this.bilanDataGridViewTextBoxColumn.HeaderText = "bilan";
-            this.bilanDataGridViewTextBoxColumn.Name = "bilanDataGridViewTextBoxColumn";
-            // 
-            // idVisiteurDataGridViewTextBoxColumn
-            // 
-            this.idVisiteurDataGridViewTextBoxColumn.DataPropertyName = "idVisiteur";
-            this.idVisiteurDataGridViewTextBoxColumn.HeaderText = "idVisiteur";
-            this.idVisiteurDataGridViewTextBoxColumn.Name = "idVisiteurDataGridViewTextBoxColumn";
-            // 
-            // idMedecinDataGridViewTextBoxColumn
-            // 
-            this.idMedecinDataGridViewTextBoxColumn.DataPropertyName = "idMedecin";
-            this.idMedecinDataGridViewTextBoxColumn.HeaderText = "idMedecin";
-            this.idMedecinDataGridViewTextBoxColumn.Name = "idMedecinDataGridViewTextBoxColumn";
-            // 
-            // rapportBindingSource
-            // 
-            this.rapportBindingSource.DataSource = typeof(gsbRapports2.rapport);
-            // 
-            // bdgVisiteur
-            // 
-            this.bdgVisiteur.DataSource = typeof(gsbRapports2.visiteur);
-            // 
-            // rapportBindingSource1
-            // 
-            this.rapportBindingSource1.DataSource = typeof(gsbRapports2.rapport);
             // 
             // FrmRecherche
             // 
@@ -327,10 +328,9 @@
             this.Controls.Add(this.lstDate);
             this.Name = "FrmRecherche";
             this.Text = "FrmRecherche";
+            ((System.ComponentModel.ISupportInitialize)(this.bdgVisiteur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgRapport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rapportBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdgVisiteur)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rapportBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,6 +367,5 @@
         private System.Windows.Forms.TextBox textMedecin;
         private System.Windows.Forms.Button btnEnregistrer;
         private System.Windows.Forms.Button btnSupprimer;
-        private System.Windows.Forms.BindingSource rapportBindingSource1;
     }
 }

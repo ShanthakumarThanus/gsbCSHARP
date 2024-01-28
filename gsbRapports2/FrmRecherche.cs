@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace gsbRapports2
     public partial class FrmRecherche : Form
     {
         private gsbrapportsEntities gsbEntities;
+        private List<rapport> Rapports;
         
         public FrmRecherche(gsbrapportsEntities gsbEntities)
         {
@@ -34,21 +36,6 @@ namespace gsbRapports2
             return req.ToList();
         }
 
-        private void dgRapport_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dgRapport.Rows[e.RowIndex];
-
-                textID.Text = row.Cells["id"].Value.ToString();
-                textDate.Text = row.Cells["date"].Value.ToString();
-                textMotif.Text = row.Cells["motif"].Value.ToString();
-                textBilan.Text = row.Cells["bilan"].Value.ToString();
-                textVisiteur.Text = row.Cells["idVisiteur"].Value.ToString();
-                textMedecin.Text = row.Cells["idMedecin"].Value.ToString();
-            }
-        }
-
         private void btnRecherche_Click(object sender, EventArgs e)
         {
             visiteur idVisiteurSelectionne = (visiteur)lstVisiteurs.SelectedValue;
@@ -58,6 +45,46 @@ namespace gsbRapports2
 
             //messages de débogage
             MessageBox.Show($"Nombre de rapports trouvés : {rapportsTrouves.Count}");
+        }
+
+        int indexRow;
+        private void dgRapport_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dgRapport.Rows[indexRow];
+
+            textID.Text = row.Cells[0].Value.ToString();
+            textDate.Text = row.Cells[1].Value.ToString();
+            textMotif.Text = row.Cells[2].Value.ToString();
+            textBilan.Text = row.Cells[3].Value.ToString();
+            textVisiteur.Text = row.Cells[4].Value.ToString();
+            textMedecin.Text = row.Cells[5].Value.ToString();
+        }
+
+        private rapport GetSelectedRapport()
+        {
+            int rapportId = Convert.ToInt16(textID.Text);
+            return gsbEntities.rapports.FirstOrDefault(r => r.id == rapportId);
+        }
+
+        private void btnEnregistrer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                rapport existingRapport = GetSelectedRapport();
+
+                existingRapport.date = Convert.ToDateTime(textDate.Text);
+                existingRapport.motif = textMotif.Text;
+                existingRapport.bilan = textBilan.Text;
+                existingRapport.idVisiteur = textVisiteur.Text;
+                existingRapport.idMedecin = Convert.ToInt16(textMedecin.Text);
+                this.gsbEntities.SaveChanges();
+                MessageBox.Show("Enregistrement Validé");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de l'enregistrement du rapport : {ex.Message}");
+            }
         }
     }
 }
