@@ -62,6 +62,7 @@
             this.rechercherToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.àproposdeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualiserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,7 +166,8 @@
             // 
             this.rapportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterToolStripMenuItem3,
-            this.rechercherToolStripMenuItem});
+            this.rechercherToolStripMenuItem,
+            this.visualiserToolStripMenuItem});
             this.rapportToolStripMenuItem.Name = "rapportToolStripMenuItem";
             this.rapportToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.rapportToolStripMenuItem.Text = "&Rapport";
@@ -318,6 +320,13 @@
             this.àproposdeToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.àproposdeToolStripMenuItem.Text = "À &propos de...";
             // 
+            // visualiserToolStripMenuItem
+            // 
+            this.visualiserToolStripMenuItem.Name = "visualiserToolStripMenuItem";
+            this.visualiserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visualiserToolStripMenuItem.Text = "Visualiser";
+            this.visualiserToolStripMenuItem.Click += new System.EventHandler(this.visualiserToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,6 +380,7 @@
         private System.Windows.Forms.ToolStripMenuItem rechercherToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem àproposdeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualiserToolStripMenuItem;
     }
 }
 
