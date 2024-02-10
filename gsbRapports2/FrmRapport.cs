@@ -23,7 +23,7 @@ namespace gsbRapports2
 
         }
 
-        private int getNumRapport() //à peut-être ajouter le champ id dans le formulaire et le mettre en read only
+        private int getNumRapport()
         {
             var reqDernier = (from ra in this.gsbEntities.rapports
                               orderby ra.id descending
