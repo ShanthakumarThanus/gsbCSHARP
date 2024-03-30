@@ -182,16 +182,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(121, 290);
+            this.label4.Location = new System.Drawing.Point(613, 389);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "ID";
+            this.label4.Visible = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(121, 339);
+            this.label5.Location = new System.Drawing.Point(121, 293);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 8;
@@ -200,7 +201,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(121, 386);
+            this.label6.Location = new System.Drawing.Point(121, 339);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 9;
@@ -209,7 +210,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(359, 290);
+            this.label7.Location = new System.Drawing.Point(121, 386);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 13);
             this.label7.TabIndex = 10;
@@ -218,7 +219,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(359, 339);
+            this.label8.Location = new System.Drawing.Point(359, 293);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 11;
@@ -227,7 +228,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(359, 386);
+            this.label9.Location = new System.Drawing.Point(359, 342);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 13);
             this.label9.TabIndex = 12;
@@ -236,15 +237,17 @@
             // textID
             // 
             this.textID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "id", true));
-            this.textID.Location = new System.Drawing.Point(188, 290);
+            this.textID.Location = new System.Drawing.Point(637, 386);
             this.textID.Name = "textID";
+            this.textID.ReadOnly = true;
             this.textID.Size = new System.Drawing.Size(100, 20);
             this.textID.TabIndex = 13;
+            this.textID.Visible = false;
             // 
             // textDate
             // 
             this.textDate.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "date", true));
-            this.textDate.Location = new System.Drawing.Point(188, 336);
+            this.textDate.Location = new System.Drawing.Point(188, 289);
             this.textDate.Name = "textDate";
             this.textDate.Size = new System.Drawing.Size(100, 20);
             this.textDate.TabIndex = 14;
@@ -252,7 +255,7 @@
             // textMotif
             // 
             this.textMotif.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "motif", true));
-            this.textMotif.Location = new System.Drawing.Point(188, 383);
+            this.textMotif.Location = new System.Drawing.Point(188, 336);
             this.textMotif.Name = "textMotif";
             this.textMotif.Size = new System.Drawing.Size(100, 20);
             this.textMotif.TabIndex = 15;
@@ -260,7 +263,7 @@
             // textBilan
             // 
             this.textBilan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "bilan", true));
-            this.textBilan.Location = new System.Drawing.Point(433, 290);
+            this.textBilan.Location = new System.Drawing.Point(188, 383);
             this.textBilan.Name = "textBilan";
             this.textBilan.Size = new System.Drawing.Size(100, 20);
             this.textBilan.TabIndex = 16;
@@ -268,7 +271,7 @@
             // textVisiteur
             // 
             this.textVisiteur.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "idVisiteur", true));
-            this.textVisiteur.Location = new System.Drawing.Point(433, 336);
+            this.textVisiteur.Location = new System.Drawing.Point(433, 289);
             this.textVisiteur.Name = "textVisiteur";
             this.textVisiteur.Size = new System.Drawing.Size(100, 20);
             this.textVisiteur.TabIndex = 17;
@@ -276,7 +279,7 @@
             // textMedecin
             // 
             this.textMedecin.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rapportBindingSource, "idMedecin", true));
-            this.textMedecin.Location = new System.Drawing.Point(433, 383);
+            this.textMedecin.Location = new System.Drawing.Point(433, 336);
             this.textMedecin.Name = "textMedecin";
             this.textMedecin.Size = new System.Drawing.Size(100, 20);
             this.textMedecin.TabIndex = 18;
