@@ -47,33 +47,13 @@ namespace gsbRapports2
             MessageBox.Show($"Nombre de rapports trouvés : {rapportsTrouves.Count}");
         }
 
-        int indexRow;
-        private void dgRapport_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            indexRow = e.RowIndex;
-            DataGridViewRow row = dgRapport.Rows[indexRow];
-
-            
-            textDate.Text = row.Cells[1].Value.ToString();
-            textMotif.Text = row.Cells[2].Value.ToString();
-            textBilan.Text = row.Cells[3].Value.ToString();
-            textVisiteur.Text = row.Cells[4].Value.ToString();
-            textMedecin.Text = row.Cells[5].Value.ToString();
-        }
-
-        private rapport GetSelectedRapport()
-        {
-            int rapportId = Convert.ToInt16(textID.Text);
-            return gsbEntities.rapports.FirstOrDefault(r => r.id == rapportId);
-        }
-
         private void btnEnregistrer_Click(object sender, EventArgs e)
         {
             try
             {
                 this.rapportBindingSource.EndEdit();
                 this.gsbEntities.SaveChanges();
-                
+
                 MessageBox.Show("Enregistrement Validé");
             }
             catch (Exception ex)
