@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,10 +54,12 @@ namespace gsbRapports2
                 root.AppendChild(rapportElement);
             }
 
-            string filePath = "rapports.xml";
+            string fileName = "rapports.xml";
+            string downloadsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+            string filePath = Path.Combine(downloadsPath, fileName);
             xmlDoc.Save(filePath);
 
-            MessageBox.Show("Le fichier XML des rapports a été généré avec succès.", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Le fichier XML des rapports a été généré avec succès dans {filePath}", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
