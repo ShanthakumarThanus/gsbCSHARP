@@ -188,7 +188,6 @@
             // bdgmedicament
             // 
             this.bdgmedicament.DataSource = typeof(gsbRapports2.medicament);
-            this.bdgmedicament.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // FrmRapport
             // 
@@ -210,7 +209,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmRapport";
             this.Text = "FrmRapport";
-            this.Load += new System.EventHandler(this.FrmRapport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.visiteurBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medecinBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familleBindingSource)).EndInit();

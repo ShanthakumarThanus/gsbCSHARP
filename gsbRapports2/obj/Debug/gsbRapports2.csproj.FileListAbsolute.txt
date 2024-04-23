@@ -37,3 +37,41 @@ E:\2TSLAM\2TSLAM AP Mission 3\Mission 3\code mission3\gsbCSHARP\gsbRapports2\obj
 E:\2TSLAM\2TSLAM AP Mission 3\Mission 3\code mission3\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.csproj.CopyComplete
 E:\2TSLAM\2TSLAM AP Mission 3\Mission 3\code mission3\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.exe
 E:\2TSLAM\2TSLAM AP Mission 3\Mission 3\code mission3\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.pdb
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\gsbRapports2.exe.config
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\gsbRapports2.exe
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\gsbRapports2.pdb
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\EntityFramework.dll
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\EntityFramework.xml
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.csproj.AssemblyReference.cache
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports.Form1.resources
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.FrmRapport.resources
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.FrmRecherche.resources
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.FrmVisualiserRapport.resources
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.Properties.Resources.resources
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.csproj.GenerateResource.cache
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.csproj.CoreCompileInputs.cache
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRappo.4FF938FE.Up2Date
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.exe
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.pdb
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\gsbRapports2.exe.config
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\gsbRapports2.exe
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\gsbRapports2.pdb
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\EntityFramework.dll
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\EntityFramework.xml
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.csproj.AssemblyReference.cache
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports.Form1.resources
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.FrmRapport.resources
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.FrmRecherche.resources
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.FrmVisualiserRapport.resources
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.Properties.Resources.resources
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.csproj.GenerateResource.cache
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.csproj.CoreCompileInputs.cache
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRappo.4FF938FE.Up2Date
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.exe
+C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.pdb

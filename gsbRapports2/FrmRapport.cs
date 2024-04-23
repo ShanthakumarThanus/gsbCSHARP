@@ -12,8 +12,8 @@ namespace gsbRapports2
 {
     public partial class FrmRapport : Form
     {
-        private gsbrapportsEntities gsbEntities;
-        public FrmRapport(gsbrapportsEntities gsbEntities)
+        private gsbrapports2021Entities gsbEntities;
+        public FrmRapport(gsbrapports2021Entities gsbEntities)
         {
             InitializeComponent();
             this.gsbEntities = gsbEntities;
@@ -92,16 +92,6 @@ namespace gsbRapports2
             {
                 MessageBox.Show($"Erreur lors de l'enregistrement du rapport : {ex.Message}");
             }
-        }
-
-        private void FrmRapport_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

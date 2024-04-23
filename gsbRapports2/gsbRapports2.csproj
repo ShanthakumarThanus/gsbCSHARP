@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="famille.cs">
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -82,40 +82,37 @@
     <Compile Include="FrmVisualiserRapport.Designer.cs">
       <DependentUpon>FrmVisualiserRapport.cs</DependentUpon>
     </Compile>
-    <Compile Include="mdGsbrapports.Context.cs">
+    <Compile Include="mdGsbrapport2.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>mdGsbrapports.Context.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="mdGsbrapports.cs">
+    <Compile Include="mdGsbrapport2.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.tt</DependentUpon>
     </Compile>
-    <Compile Include="mdGsbrapports.Designer.cs">
+    <Compile Include="mdGsbrapport2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>mdGsbrapports.edmx</DependentUpon>
+      <DependentUpon>mdGsbrapport2.edmx</DependentUpon>
     </Compile>
     <Compile Include="medecin.cs">
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.tt</DependentUpon>
     </Compile>
     <Compile Include="medicament.cs">
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.tt</DependentUpon>
     </Compile>
     <Compile Include="offrir.cs">
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rapport.cs">
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.tt</DependentUpon>
     </Compile>
     <Compile Include="visiteur.cs">
-      <DependentUpon>mdGsbrapports.tt</DependentUpon>
+      <DependentUpon>mdGsbrapport2.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -138,12 +135,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="mdGsbrapports.edmx">
+    <EntityDeploy Include="mdGsbrapport2.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>mdGsbrapports.Designer.cs</LastGenOutput>
+      <LastGenOutput>mdGsbrapport2.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="mdGsbrapports.edmx.diagram">
-      <DependentUpon>mdGsbrapports.edmx</DependentUpon>
+    <None Include="mdGsbrapport2.edmx.diagram">
+      <DependentUpon>mdGsbrapport2.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\famille.datasource" />
@@ -168,15 +165,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="mdGsbrapports.Context.tt">
+    <Content Include="mdGsbrapport2.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>mdGsbrapports.edmx</DependentUpon>
-      <LastGenOutput>mdGsbrapports.Context.cs</LastGenOutput>
+      <DependentUpon>mdGsbrapport2.edmx</DependentUpon>
+      <LastGenOutput>mdGsbrapport2.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="mdGsbrapports.tt">
+    <Content Include="mdGsbrapport2.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>mdGsbrapports.edmx</DependentUpon>
-      <LastGenOutput>mdGsbrapports.cs</LastGenOutput>
+      <DependentUpon>mdGsbrapport2.edmx</DependentUpon>
+      <LastGenOutput>mdGsbrapport2.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

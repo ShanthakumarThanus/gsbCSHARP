@@ -12,11 +12,11 @@ namespace gsbRapports
 {
     public partial class Form1 : Form
     {
-        private gsbrapportsEntities gsbEntities;
+        private gsbrapports2021Entities gsbEntities;
         public Form1()
         {
             this.InitializeComponent();
-            this.gsbEntities = new gsbrapportsEntities();
+            this.gsbEntities = new gsbrapports2021Entities();
         }
 
         private void fichierToolStripMenuItem_Click(object sender, EventArgs e)

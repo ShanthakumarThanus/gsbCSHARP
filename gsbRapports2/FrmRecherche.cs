@@ -13,10 +13,10 @@ namespace gsbRapports2
 {
     public partial class FrmRecherche : Form
     {
-        private gsbrapportsEntities gsbEntities;
+        private gsbrapports2021Entities gsbEntities;
         private List<rapport> Rapports;
         
-        public FrmRecherche(gsbrapportsEntities gsbEntities)
+        public FrmRecherche(gsbrapports2021Entities gsbEntities)
         {
             InitializeComponent();
             this.gsbEntities = gsbEntities;

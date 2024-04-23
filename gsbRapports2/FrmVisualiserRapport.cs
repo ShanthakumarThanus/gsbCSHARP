@@ -13,8 +13,8 @@ namespace gsbRapports2
 {
     public partial class FrmVisualiserRapport : Form
     {
-        private gsbrapportsEntities gsbEntities;
-        public FrmVisualiserRapport(gsbrapportsEntities gsbEntities)
+        private gsbrapports2021Entities gsbEntities;
+        public FrmVisualiserRapport(gsbrapports2021Entities gsbEntities)
         {
             InitializeComponent();
             this.gsbEntities = gsbEntities;
