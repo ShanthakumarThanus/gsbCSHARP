@@ -53,7 +53,7 @@ namespace gsbRapports2
             indexRow = e.RowIndex;
             DataGridViewRow row = dgRapport.Rows[indexRow];
 
-            textID.Text = row.Cells[0].Value.ToString();
+            
             textDate.Text = row.Cells[1].Value.ToString();
             textMotif.Text = row.Cells[2].Value.ToString();
             textBilan.Text = row.Cells[3].Value.ToString();
@@ -71,14 +71,9 @@ namespace gsbRapports2
         {
             try
             {
-                rapport existingRapport = GetSelectedRapport();
-
-                existingRapport.date = Convert.ToDateTime(textDate.Text);
-                existingRapport.motif = textMotif.Text;
-                existingRapport.bilan = textBilan.Text;
-                existingRapport.idVisiteur = textVisiteur.Text;
-                existingRapport.idMedecin = Convert.ToInt16(textMedecin.Text);
+                this.rapportBindingSource.EndEdit();
                 this.gsbEntities.SaveChanges();
+                
                 MessageBox.Show("Enregistrement Validé");
             }
             catch (Exception ex)
