@@ -1,18 +1,7 @@
 <Rapports>
-  <Rapport ID="289" Date="16/10/2021 00:00:00" Motif="Demande du médecin" Bilan="Très aimable maintenir un contact régulier" Visiteur="b19 " Medecin="1" />
-  <Rapport ID="921" Date="17/11/2021 00:00:00" Motif="recommandation de confrère" Bilan="Pas très aimable" Visiteur="f39 " Medecin="1" />
-  <Rapport ID="1000" Date="22/12/2023 00:00:00" Motif="test" Bilan="test" Visiteur="a131" Medecin="1" />
-  <Rapport ID="2000" Date="20/01/2024 00:00:00" Motif="test" Bilan="je ne pas modif l'id" Visiteur="a131" Medecin="1" />
-  <Rapport ID="4000" Date="22/01/2024 00:00:00" Motif="test" Bilan="test" Visiteur="a131" Medecin="1" />
-  <Rapport ID="4001" Date="22/01/2024 00:00:00" Motif="testttttes" Bilan="tsetteststss" Visiteur="a131" Medecin="1" />
-  <Rapport ID="4002" Date="22/01/2024 00:00:00" Motif="test" Bilan="est" Visiteur="a131" Medecin="1" />
-  <Rapport ID="4003" Date="22/01/2024 00:00:00" Motif="y" Bilan="y" Visiteur="a17 " Medecin="1" />
-  <Rapport ID="4004" Date="22/01/2024 00:00:00" Motif="aaaaaaaaaa" Bilan="nnnnnnnnnnn" Visiteur="b59 " Medecin="1" />
-  <Rapport ID="5000" Date="24/01/2024 00:00:00" Motif="test" Bilan="test" Visiteur="a131" Medecin="1" />
-  <Rapport ID="5001" Date="24/01/2024 00:00:00" Motif="rrrrr" Bilan="rrrr" Visiteur="a131" Medecin="1" />
-  <Rapport ID="6000" Date="28/01/2024 00:00:00" Motif="rien" Bilan="ggggggggg" Visiteur="a131" Medecin="1" />
-  <Rapport ID="6001" Date="28/01/2024 00:00:00" Motif="test" Bilan="test" Visiteur="a131" Medecin="1" />
-  <Rapport ID="6002" Date="20/01/2024 00:00:00" Motif="hmmm" Bilan="hù" Visiteur="a131" Medecin="1" />
-  <Rapport ID="6003" Date="20/01/2024 00:00:00" Motif="non" Bilan="non" Visiteur="a131" Medecin="1" />
-  <Rapport ID="8000" Date="24/03/2024 00:00:00" Motif="test du 25" Bilan="à revoir" Visiteur="a131" Medecin="1" />
+  <Rapport ID="289" Date="16/10/2016 00:00:00" Motif="Demande du médecin" Bilan="Très aimable maintenir un contact régulier" Visiteur="b19 " Medecin="1" />
+  <Rapport ID="922" Date="17/11/2016 00:00:00" Motif="recommandation de confrère" Bilan="Pas très aimable" Visiteur="f39 " Medecin="1" />
+  <Rapport ID="1974" Date="23/04/2024 00:00:00" Motif="tests" Bilan="test" Visiteur="a131" Medecin="1" />
+  <Rapport ID="1975" Date="23/04/2024 00:00:00" Motif="pc portable" Bilan="génial" Visiteur="a131" Medecin="1" />
+  <Rapport ID="1977" Date="23/04/2024 00:00:00" Motif="ne mange pas keto" Bilan="il faut manger keto" Visiteur="a131" Medecin="1" />
 </Rapports>

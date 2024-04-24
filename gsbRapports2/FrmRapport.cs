@@ -21,6 +21,7 @@ namespace gsbRapports2
             this.medecinBindingSource.DataSource = gsbEntities.medecins.ToList();
             this.familleBindingSource.DataSource = gsbEntities.familles.ToList();
 
+            this.bdgmedicament.DataSource = gsbEntities.medicaments.ToList();
         }
 
         private int getNumRapport()
@@ -49,49 +50,60 @@ namespace gsbRapports2
             return newRapport;
         }
 
-        private offrir newOffrir()
+        //private offrir newOffrir()
+        //{
+        //    rapport r = newRapport(); // Obtenez le rapport associé à cette instance de nouveau rapport
+
+        //    // Ne modifiez pas l'ID du rapport ici, utilisez plutôt celui de l'instance existante
+        //    // r.id = getNumRapport() + 1;
+
+        //    medicament m = (medicament)lstMedicament.SelectedItem;
+        //    offrir newOffrir = new offrir();
+        //    newOffrir.idRapport = r.id;
+        //    newOffrir.idMedicament = m.idFamille;
+        //    newOffrir.quantite = 1;
+        //    return newOffrir;
+        //}
+
+        private offrir newOffrir(int idRapport)
         {
-            rapport r = newRapport(); // Utilisez l'instance existante créée dans newRapport()
-
-            // Ne modifiez pas l'ID du rapport ici, utilisez plutôt celui de l'instance existante
-            // r.id = getNumRapport() + 1;
-
+            offrir off = new offrir();
             medicament m = (medicament)lstMedicament.SelectedItem;
-            offrir newOffrir = new offrir();
-            newOffrir.idRapport = r.id; // Utilisez l'ID de l'instance existante
-            newOffrir.idMedicament = m.id.ToString();
-            newOffrir.quantite = 1;
-            return newOffrir;
+            off.idMedicament = m.id;
+            off.idRapport = idRapport;
+            off.quantite = 1;
+            return off;
         }
 
 
-        /*private offrir newOffrir() //pour ajouter dans la table "offrir" l'id rapport et id medicament + mettre la valeur de quantité à 1 pour chaque ajout
-        {
-            rapport r = new rapport(); //trouver une solution pour ajouter l'id
-            r.id = getNumRapport() + 1;
-            medicament m = (medicament)lstMedicament.SelectedValue;
-            offrir newOffrir = new offrir();
-            newOffrir.idRapport = getNumRapport();
-            newOffrir.idMedicament = m.id.ToString();
-            newOffrir.quantite = 1;
-            return newOffrir;
-        }   */
 
-
-        private void enregistrer_Click(object sender, EventArgs e) // "Intéressons-nous au bouton d’ajout du navigateur."
+        private void enregistrer_Click(object sender, EventArgs e) // "Intéressons-nous au b((souton d’ajout du navigateur."
         {
             this.bdgrapport.EndEdit();
+            this.bdgmedicament.EndEdit();
             try
             {
-                this.gsbEntities.rapports.Add(newRapport());
-                //this.gsbEntities.offrirs.Add(newOffrir()); // c'est newOffrir qui pose problème
+                rapport rap = newRapport();
+                this.gsbEntities.rapports.Add(rap);
+                
+
+                offrir off = newOffrir(rap.id);
+                this.gsbEntities.offrirs.Add(off); 
                 this.gsbEntities.SaveChanges();
                 MessageBox.Show("Enregistrement Validé");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erreur lors de l'enregistrement du rapport : {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show($"Erreur lors de l'enregistrement du rapport : {ex.InnerException.Message}");
+                }
+                else
+                {
+                    MessageBox.Show($"Erreur lors de l'enregistrement du rapport : {ex.Message}");
+                }
             }
+
         }
     }
 }

@@ -45,7 +45,6 @@
             this.idMedecinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rapportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnEnregistrer = new System.Windows.Forms.Button();
-            this.btnSupprimer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bdgVisiteur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgRapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rapportBindingSource)).BeginInit();
@@ -197,22 +196,11 @@
             this.btnEnregistrer.UseVisualStyleBackColor = true;
             this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
-            // btnSupprimer
-            // 
-            this.btnSupprimer.Location = new System.Drawing.Point(1217, 509);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(112, 35);
-            this.btnSupprimer.TabIndex = 20;
-            this.btnSupprimer.Text = "Supprimer?";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
-            // 
             // FrmRecherche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1400, 692);
-            this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnEnregistrer);
             this.Controls.Add(this.dgRapport);
             this.Controls.Add(this.btnRecherche);
@@ -250,6 +238,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idVisiteurDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idMedecinDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnEnregistrer;
-        private System.Windows.Forms.Button btnSupprimer;
     }
 }
