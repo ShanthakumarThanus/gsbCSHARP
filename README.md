@@ -47,4 +47,5 @@ Ce projet de gestion des rapports en C# / Winform fournira une solution pour la 
 - Ouvrez le projet dans Visual Studio.
 - Assurez-vous que les références aux bibliothèques sont correctement configurées.
 - Exécutez les scripts SQL dans SQL Server pour créer la base de données et les tables nécessaires.
+- Connectez-vous au SQL Server via Visual Studio
 - Compilez et exécutez l'application.
