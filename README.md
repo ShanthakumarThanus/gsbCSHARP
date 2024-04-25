@@ -36,12 +36,15 @@ Fonctionnalité permettant de générer des rapports détaillés sur les donnée
 
 Ce projet de gestion des rapports en C# / Winform fournira une solution pour la création, la visualisation et la modification de rapports, répondant ainsi aux besoins des utilisateurs en matière de gestion de données.
 
-Configuration Requise
-Visual Studio 20XX.
-SQL Server XXXX ou supérieur.
-Guide d'Installation
-Clonez ce dépôt sur votre machine locale.
-Ouvrez le projet dans Visual Studio.
-Assurez-vous que les références aux bibliothèques sont correctement configurées.
-Exécutez les scripts SQL dans SQL Server pour créer la base de données et les tables nécessaires.
-Compilez et exécutez l'application.
+### Configuration Requise :
+
+- Visual Studio 20XX.
+- SQL Server XXXX ou supérieur.
+  
+## Guide d'Installation :
+
+- Clonez ce dépôt sur votre machine locale.
+- Ouvrez le projet dans Visual Studio.
+- Assurez-vous que les références aux bibliothèques sont correctement configurées.
+- Exécutez les scripts SQL dans SQL Server pour créer la base de données et les tables nécessaires.
+- Compilez et exécutez l'application.
