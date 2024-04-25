@@ -41,7 +41,7 @@ Ce projet de gestion des rapports en C# / Winform fournira une solution pour la 
 - Visual Studio 20XX.
 - SQL Server XXXX ou supérieur.
   
-## Guide d'Installation :
+### Guide d'Installation :
 
 - Clonez ce dépôt sur votre machine locale.
 - Ouvrez le projet dans Visual Studio.
