@@ -76,6 +76,12 @@
     <Compile Include="FrmRecherche.Designer.cs">
       <DependentUpon>FrmRecherche.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRechercheParDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRechercheParDate.Designer.cs">
+      <DependentUpon>FrmRechercheParDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmVisualiserRapport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRecherche.resx">
       <DependentUpon>FrmRecherche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRechercheParDate.resx">
+      <DependentUpon>FrmRechercheParDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVisualiserRapport.resx">
       <DependentUpon>FrmVisualiserRapport.cs</DependentUpon>

@@ -54,5 +54,12 @@ namespace gsbRapports
             v.MdiParent = this;
             v.Show();
         }
+
+        private void rechercherParDateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRechercheParDate r = new FrmRechercheParDate(this.gsbEntities);
+            r.MdiParent = this;
+            r.Show();
+        }
     }
 }

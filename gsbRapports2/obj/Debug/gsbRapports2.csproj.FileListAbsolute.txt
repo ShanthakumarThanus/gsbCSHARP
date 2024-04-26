@@ -75,3 +75,4 @@ C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRa
 C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRappo.4FF938FE.Up2Date
 C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.exe
 C:\Users\Theepiga\Documents\gsbCSHARP - pc portable\gsbRapports2\obj\Debug\gsbRapports2.pdb
+C:\Users\Theepiga\Documents\GitHub\gsbCSHARP\gsbRapports2\obj\Debug\gsbRapports2.FrmRechercheParDate.resources
